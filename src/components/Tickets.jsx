@@ -24,12 +24,12 @@ const Tickets = () => {
     }, [])
     
     return (
-        <div className="container mx-auto my-28">
-          <h1 className="text-center text-5xl font-bold my-20">Our Movie Gallery</h1>
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="container mx-auto my-16 md:my-28">
+          <h1 className="text-center text-2xl md:text-5xl font-bold my-10 md:my-20">Our Movie Gallery</h1>
+         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {
                 tickets.length && tickets.map((item) =>(
-                    <Card key={item.show.id} className="w-64 pt-4 px-4 group hover:bg-gray-300 ">
+                    <Card key={item.show.id} className="w-48 md:w-56 lg:w-64 pt-4 px-4 group hover:bg-gray-300 ">
                    
                       <img src={ item.show.image?.medium} className="group transition transform group-hover:-translate-y-1 group-hover:opacity-75 motion-reduce:transition-none motion-reduce:hover:transform-none ..." alt="profile-picture" />
                     

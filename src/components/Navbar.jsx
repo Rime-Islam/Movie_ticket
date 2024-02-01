@@ -10,7 +10,7 @@ import {
 
 const myNavbar = () => {
     return (
-      <div className="container mx-auto">
+      <div className="container mx-0 lg:mx-auto">
           <Navbar
            variant="gradient"
            color="blue-gray"

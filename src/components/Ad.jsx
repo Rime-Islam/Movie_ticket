@@ -8,7 +8,7 @@ import { Pagination } from 'swiper/modules';
 
 const Ad = () => {
     return (
-        <div className='my-28'>
+        <div className='my-16 md:my-28'>
             <Swiper
         slidesPerView={4}
         spaceBetween={30}

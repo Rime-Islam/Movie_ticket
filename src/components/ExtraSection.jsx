@@ -2,11 +2,11 @@
 
 const ExtraSection = () => {
     return (
-        <div className="container mx-auto flex my-28">
-            <div className="flex-1">
+        <div className="container mx-auto lg:flex my-28">
+            <div className="flex-1 px-2">
             <img className="w-full h-[65vh]" src="https://i.ibb.co/JRwrSQK/Screenshot-2024-01-31-221044-removebg-preview.png" alt="image" />
             </div>
-            <div className="flex-1 mt-8">
+            <div className="flex-1 px-3 mt-8">
                 <p className="text-xl mb-4 text-gray-500 font-semibold">Get to Know Us</p>
                 <h1 className="text-5xl font-bold mb-4">The Best Movie Ticket Distributor</h1>
                 <p className="text-lg mb-12">Elevate your movie-going experience with hassle-free online ticket booking. Explore the latest releases, secure your preferred seats, and immerse yourself in the magic of cinema, all at the click of a button!</p>

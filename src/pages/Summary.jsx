@@ -55,11 +55,12 @@ useEffect(() => {
      </div>
             {
                 movies.length && movies.map((movie) => (
-                    <div key={movie.show.id} className="flex gap-5">
-                        <div>
-                            <img className="max-w-72 h-[50vh]" src={movie.show.image?.original} alt="image" />
+                    <div key={movie.show.id} className="md:flex justify-center gap-5">
+                        <div className="flex justify-center">
+                            <img className="w-[350px] md:max-w-72 h-[50vh]" src={movie.show.image?.original} alt="image" />
                         </div>
-                        <div className="mt-3">
+                       <div className="flex justify-center mt-3 md:mt-0">
+                       <div className="mt-3">
                             <h1 className="text-5xl font-bold uppercase">{movie.show.name}</h1>
                             <p className="text-xl text-amber-900 mb-5"><span className="font-bold">Run Time:    </span> {movie.show.runtime} Minutes</p>
                             <p><span className="font-bold mr-14">Type: </span> {movie.show.type}</p>
@@ -71,7 +72,7 @@ useEffect(() => {
                             <p><span className="font-bold mr-16">End:</span>{movie.show.ended} </p>
                             <p><span className="font-bold mr-0.5">Official Site: </span> <a href={movie.show.officialSite}  >Visit Official Site</a></p>
                             <p className="text-2xl font-bold mt-8 text-amber-900">Summary</p>
-                            <p>{movie.show.summary}</p>
+                            <p className=" w-96 lg:w-[600px] ">{movie.show.summary}</p>
                             
 
                             <div>
@@ -135,6 +136,7 @@ useEffect(() => {
                 </div>
 
                         </div>
+                       </div>
                     </div>
                 ))
             }
