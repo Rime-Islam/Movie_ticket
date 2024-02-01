@@ -1,8 +1,24 @@
-# React + Vite
+# Freatures of This Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- It is a React.js application made with HTML5, CSS3, Tailwind.css, Material Tailwind, Daisy UI, React.js, Swiper.js, React Router Dom, SweetAlert2, Heroicons, and deployed with Firebase.
 
-Currently, two official plugins are available:
+- This website has only two pages: the home page and the summary page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clicking on the logo will redirect to the home page.
+
+- The icon and search option in the navbar are for design purposes only.
+
+- The 'GET TICKET' and 'Discover More' buttons on the home page are not functional.
+
+- A beautiful hover effect is added to the card. Hovering on the card will make the 'DETAILS' button visible, which will take you to its dynamic details page.
+
+- The student discount part is visible for large and medium screens. The 'Book Your Ticket' button is not functional.
+
+- The details page will show detailed information about the clicked card.
+
+- Clicking on the 'BUY TICKET' button will open a modal with an input form. Some details are auto-filled, and some need to be filled in by the user.
+
+- The 'Book' button will save the information to local storage and change the 'BUY TICKET' button to 'BOOKED.'
+
+
+

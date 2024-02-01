@@ -114,20 +114,20 @@ useEffect(() => {
                     <label className="label">
                       <span className="label-text">Your Email</span>
                     </label>
-                    <input type="email" placeholder="Enter your valid email" name="email"  className="input input-bordered w-full"/>
+                    <input type="email" placeholder="Enter your valid email" name="email"  className="input input-bordered w-full" required/>
                   </div>
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Your Name</span>
                     </label>
-                    <input type="text" placeholder="Enter your Full Name" name="name"  className="input input-bordered w-full"/>
+                    <input type="text" placeholder="Enter your Full Name" name="name"  className="input input-bordered w-full" required/>
                   </div>
                 
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Number of Ticket's</span>
                     </label>
-                    <input type="number" placeholder="Ticket count in number" name="count"  className="input input-bordered w-full"/>
+                    <input type="number" placeholder="Ticket count in number" name="count"  className="input input-bordered w-full " required/>
                   </div>
                 
                     <button type="submit" className="btn w-full btn-warning mt-5">Book</button>
