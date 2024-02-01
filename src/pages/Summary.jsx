@@ -2,6 +2,7 @@ import { Button } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import Student from "../components/Student";
 
 
 const Summary = () => {
@@ -48,6 +49,9 @@ useEffect(() => {
 
     return (
         <div className="container mx-auto mt-36 mb-20">
+     <div>
+     <Student></Student>
+     </div>
             {
                 movies.length && movies.map((movie) => (
                     <div key={movie.show.id} className="flex gap-5">
@@ -133,6 +137,7 @@ useEffect(() => {
                     </div>
                 ))
             }
+            
         </div>
     );
 };
