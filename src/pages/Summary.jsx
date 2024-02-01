@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import Student from "../components/Student";
+import Ad from "../components/Ad";
 
 
 const Summary = () => {
@@ -137,7 +138,9 @@ useEffect(() => {
                     </div>
                 ))
             }
-            
+            <div>
+              <Ad></Ad>
+            </div>
         </div>
     );
 };
