@@ -26,6 +26,7 @@ const Tickets = () => {
     return (
         <div className="container mx-auto my-16 md:my-28">
           <h1 className="text-center text-2xl md:text-5xl font-bold my-10 md:my-20">Our Movie Gallery</h1>
+         <div className="flex justify-center">
          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {
                 tickets.length && tickets.map((item) =>(
@@ -65,6 +66,8 @@ const Tickets = () => {
                   </Card>
                 ))
             }
+         </div>
+
          </div>
         </div>
     );

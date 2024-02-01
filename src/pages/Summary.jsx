@@ -72,7 +72,8 @@ useEffect(() => {
                             <p><span className="font-bold mr-16">End:</span>{movie.show.ended} </p>
                             <p><span className="font-bold mr-0.5">Official Site: </span> <a href={movie.show.officialSite}  >Visit Official Site</a></p>
                             <p className="text-2xl font-bold mt-8 text-amber-900">Summary</p>
-                            <p className=" w-96 lg:w-[600px] ">{movie.show.summary}</p>
+                         
+                            <div className=" w-96 lg:w-[600px] " dangerouslySetInnerHTML={{ __html: movie.show.summary }} />
                             
 
                             <div>
@@ -83,7 +84,7 @@ useEffect(() => {
               disabled={isBooked} 
             >{isBooked ? 'Booked' : 'Buy Ticket'}</Button>
                 <dialog id="my_modal_3" className="modal">
-                  <div className="modal-box">
+                  <div className="modal-box max-w-sm">
 
                  <div className="flex justify-end">
                  <button onClick={() => document.getElementById('my_modal_3').close()} className="btn">X</button>
@@ -94,42 +95,42 @@ useEffect(() => {
                     <label className="label">
                       <span className="label-text">Show Name</span>
                     </label>
-                    <input type="text" defaultValue={movie.show.name} name="showname" readOnly className="input input-bordered max-w-xs" />
+                    <input type="text" defaultValue={movie.show.name} name="showname" readOnly className="input input-bordered w-full" />
                   </div>
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Show Type</span>
                     </label>
-                    <input type="url" defaultValue={movie.show.genres[0]} name="type" readOnly className="input input-bordered max-w-xs"  />
+                    <input type="url" defaultValue={movie.show.genres[0]} name="type" readOnly className="input input-bordered w-full"  />
                   </div>
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Language</span>
                     </label>
-                    <input type="text" defaultValue={movie.show.language} readOnly name="language"  className="input input-bordered max-w-xs"/>
+                    <input type="text" defaultValue={movie.show.language} readOnly name="language"  className="input input-bordered w-full"/>
                   </div>
                 
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Your Email</span>
                     </label>
-                    <input type="email" placeholder="Enter your valid email" name="email"  className="input input-bordered max-w-xs"/>
+                    <input type="email" placeholder="Enter your valid email" name="email"  className="input input-bordered w-full"/>
                   </div>
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Your Name</span>
                     </label>
-                    <input type="text" placeholder="Enter your Full Name" name="name"  className="input input-bordered max-w-xs"/>
+                    <input type="text" placeholder="Enter your Full Name" name="name"  className="input input-bordered w-full"/>
                   </div>
                 
                     <div className="form-control mt-5">
                     <label className="label">
                       <span className="label-text">Number of Ticket's</span>
                     </label>
-                    <input type="number" placeholder="Ticket count in number" name="count"  className="input input-bordered max-w-xs"/>
+                    <input type="number" placeholder="Ticket count in number" name="count"  className="input input-bordered w-full"/>
                   </div>
                 
-                    <button type="submit" className="btn btn-warning mt-5">Book</button>
+                    <button type="submit" className="btn w-full btn-warning mt-5">Book</button>
                   </form>
                   </div>
                 </dialog>

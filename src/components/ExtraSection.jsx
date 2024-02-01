@@ -29,7 +29,7 @@ const ExtraSection = () => {
                         <p >We’ve designed a culture that allows our stewards to assimilate.</p>
                     </div>
                 </div>
-                <button className="btn btn-warning btn-outline">Discover More</button>
+                <button className="btn bg-amber-600 ">Discover More</button>
             </div>
         </div>
     );

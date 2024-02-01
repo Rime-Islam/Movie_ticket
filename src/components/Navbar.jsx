@@ -6,6 +6,7 @@ import {
     Input,
   } from "@material-tailwind/react";
   import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
    
 
 const myNavbar = () => {
@@ -23,11 +24,13 @@ const myNavbar = () => {
               variant="h6"
               className="mr-4 ml-2 cursor-pointer py-1.5"
             >
+                  <Link to="/">
                   <img
             alt="logo"
             className="h-6 w-full object-cover object-center"
             src="https://i.ibb.co/hFf4twf/Screenshot-2024-01-31-221510-removebg-preview.png"
           />
+                  </Link>
               
             </Typography>
             <div className="ml-auto flex gap-1 md:mr-4">
