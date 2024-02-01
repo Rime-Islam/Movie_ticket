@@ -54,9 +54,9 @@ useEffect(() => {
                         <div>
                             <img className="max-w-72 h-[50vh]" src={movie.show.image?.original} alt="image" />
                         </div>
-                        <div>
-                            <h1 className="text-3xl font-bold uppercase">{movie.show.name}</h1>
-                            <p className="text-amber-900 mb-5"><span className="font-bold">Run Time:    </span> {movie.show.runtime} Minutes</p>
+                        <div className="mt-3">
+                            <h1 className="text-5xl font-bold uppercase">{movie.show.name}</h1>
+                            <p className="text-xl text-amber-900 mb-5"><span className="font-bold">Run Time:    </span> {movie.show.runtime} Minutes</p>
                             <p><span className="font-bold mr-14">Type: </span> {movie.show.type}</p>
                             <p><span className="font-bold mr-4">Language:</span> {movie.show.language}</p>
                             <p><span className="font-bold mr-12">Genre:</span>{movie.show.genres[0]}, {movie.show.genres[1]}</p>
@@ -65,7 +65,7 @@ useEffect(() => {
                             <p><span className="font-bold mr-8"> Release:</span>{movie.show.premiered} </p>
                             <p><span className="font-bold mr-16">End:</span>{movie.show.ended} </p>
                             <p><span className="font-bold mr-0.5">Official Site: </span> <a href={movie.show.officialSite}  >Visit Official Site</a></p>
-                            <p className="text-xl font-bold mt-8 text-amber-900">Summary</p>
+                            <p className="text-2xl font-bold mt-8 text-amber-900">Summary</p>
                             <p>{movie.show.summary}</p>
                             
 
