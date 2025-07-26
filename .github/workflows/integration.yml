@@ -27,11 +27,7 @@ jobs:
 
     - name: "Build command"
       run: npm run build 
-  
 
-    unit-tests:
-
-    runs-on: ubuntu-latest
 
     strategy:
       matrix:
